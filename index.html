@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Journey HTML CSS Template</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                Vakansea
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Tujuan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Rekomendasi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Map</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tentang</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kontak</a>
+                                </li>
+                                <li class="nav-item">
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                </li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Temukan Destinasi Anda</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Pilih Tujuan Wisatamu</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Pilih Tujuan Wisatamu...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Tanggal Check-In</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="DD/MM/YYYY">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h1 class="text-uppercase mb-4"> Wujudkan Perjalananmu dengan Caramu    </h1>
+                            <p class="mb-4">Siapa yang udah siap-siap buat liburan jelajahi destinasi wisata populer? Yuk booking tiket di Vakansee! Di sini kamu bisa cek informasi wisata, booking perjalanan wisata dan dapatkan  promo. Boking perjalanan bisa kamu pesan dengan mudah dan cepat hanya di Vakansee. Dengan beberapa klik aja, kamu bisa boking perjalanan murah serta cari destinasi sesuai rute yang kamu mau. .</p>
+                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>                              
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/linau.jpg" alt="Image">
+                        <img src="img/krui.jpg" alt="Image">
+                        <img src="img/PANTAI-SARI-RINGGUNG.jpg" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Tempat yang paling banyak dikunjungi di pulau sumatera</h2>
+                        <p>Salah satu dari lima pulau terbesar di Indonesia, Sumatera, menyimpan kekayaan alam dan pesona budaya tersendiri yang sangat menarik untuk dijelajahi. Ada banyak sekali destinasi wisata di Sumatera yang popularitasnya tak hanya terkenal di Indonesia, namun juga tersohor di dunia. Dari sekian banyak destinasi wisata di Sumatera tersebut, berikut rangkuman dan rekomendasi destinasi wisata di Sumatera yang wajib kamu kunjungi!</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/Pantai-Banyu-Tibo.jpg" alt="Image">
+                        <img src="img/karimunjawa.jpg" alt="Image">
+                        <img src="img/parang-tritis.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Tempat yang paling banyak dikunjungi di pulau jawa</h2>
+                        <p>Jawa, sebuah pulau di Indonesia, menawarkan berbagai destinasi menarik yang mencakup kekayaan alam, budaya, dan sejarah. berikut rangkuman dan rekomendasi destinasi wisata di jawa yang wajib kamu kunjungi!</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/pantai-koka.jpg" alt="Image">
+                        <img src="img/Pntai Watu Bela.jpg" alt="Image">
+                        <img src="img/Pantai Marosi.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Tempat yang paling banyak dikunjungi di pulau NTT</h2>
+                        <p>
+                            Kalimantan adalah pulau terbesar ketiga di dunia dan merupakan rumah bagi berbagai macam destinasi wisata yang menarik.berikut rangkuman dan rekomendasi destinasi wisata di kalimantan yang wajib kamu kunjungi!</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            Jawa
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            Sumatera
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Kalimantan
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Bali
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/africa.png" alt="Image" class="img-fluid">
+                            Papua
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/australia.png" alt="Image" class="img-fluid">
+                            Sulawesi
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/antartica.png" alt="Image" class="img-fluid">
+                            NTT
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content clearfix">
+                	
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/karimunjawa.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Karimunjawa</h3>
+                                    <p class="tm-text-highlight">Jawa Tengah</p>
+                                    <p class="tm-text-gray">Karimunjawa Nusantara adalah salah satu kabupaten di bawah Kabupaten Jepara Provinsi Jawa Tengah. Beberapa pulau dibentuk oleh terumbu karang dan ditutup dengan lapisan pasir. Pulau-pulau ini menyembunyikan berbagai potensi pesona keindahan alam, pegunungan, pasir putih pantai, dan dunia bawah laut. Taman Nasional Karimunjawa terletak sekitar 45 mil laut dari Jepara dan 80 mil laut dari Semarang</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 850.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai-anyer.jpeg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Anyer</h3>
+                                    <p class="tm-text-highlight">Banten</p>
+                                    <p class="tm-text-gray">Pantai Anyer ini merupakan salah satu ikon utama dan menjadi primadona para wisatawan baik itu lokal hingga wisatawan luar negeri yang sedang berkunjung ke Banten, Indonesia. Selain itu, Pantai Anyer terletak di Jl. Raya Anyer, Kec. Anyer, Kab. Serang, Provinsi Banten dan menjadi pantai yang banyak dikunjungi oleh wisatawan hingga saat ini.</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/parang-tritis.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Parangtritis</h3>
+                                    <p class="tm-text-highlight">yogyakarta</p>
+                                    <p class="tm-text-gray">Pantai Parangtritis adalah tempat wisata yang terletak di Kalurahan Parangtritis, Kapanéwon Kretek, Kabupaten Bantul, Daerah Istimewa Yogyakarta.Pantai Parangtritis juga memungkian wisatawan untuk menyaksikan matahari terbit dan matahari terbenam. Pantai ini menawarkan aktivitas lain bagi para wisatawan seperti mengelilingi pantai dengan menggunakan motor ATV, kuda maupun delman, melakukan olahraga seperti berlari, sepak bola dan voli di pasir pantai, bermain di pinggir ombak, bermain layangan, atau sekadar duduk-duduk sambil menikmati suasana Pantai Parangtritis.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 550.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pantai-Banyu-Tibo.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Banyu Tibo</h3>
+                                    <p class="tm-text-highlight">Pacitan</p>
+                                    <p class="tm-text-gray"> Pantai Banyu Tibo Pacitan adalah destinasi wisata yang menakjubkan yang terletak di Kabupaten Pacitan, Jawa Timur. Diapit oleh perbukitan hijau yang menawan, pantai ini menawarkan pesona air terjun yang memukau. Air terjun Banyu Tibo adalah daya tarik utama Pantai Banyu Tibo Pacitan. Air terjun ini tampak sangat indah dengan aliran air yang terjun ke kolam alami yang indah.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 750.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai parai tenggiri.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Parai Tenggiri</h3>
+                                    <p class="tm-text-highlight">Bangka Belitung</p>
+                                    <p class="tm-text-gray">Pantai Parai Tenggiri adalah salah satu objek wisata yang terletak di Kecamatan Sungai Liat, Kabupaten Bangka, Kepulauan Bangka Belitung. Tepatnya berada di Desa Sinar Baru yang kira-kira berjarak 30 kilometer di sebelah utara kota Pangkalpinang.Keindahan Pantai Parai Tenggiri tak hanya berhenti di pasir dan tepi pantainya. Masih terdapat Rock Island yang terhubung dengan jembatan sepanjang 200 meter. Jembatan ini berhiaskan lampu-lampu cantik. Saat malam, pancaran dari lampu-lampu tersebut menambah kecantikan Rock Island.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/linau.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Linau</h3>
+                                    <p class="tm-text-highlight">Bengkulu</p>
+                                    <p class="tm-text-gray">Pantai Linau merupakan salah satu objek wisata alam yang berada di Kabupaten Kaur, Provinsi Bengkulu. Di pantai ini, para wisatawan pastinya akan dimanjakan dengan sensasi pantai nan eksotik.Pantai Linau adalah salah satu spot foto yang terbaik bagi banyak wisatawan yang menghabiskan hari liburnya di Desa Linau </p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 900.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/krui.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Krui</h3>
+                                    <p class="tm-text-highlight">Lampung</p>
+                                    <p class="tm-text-gray">Krui adalah ibu kota dari Kabupaten Pesisir Barat, Lampung. Sebelumnya, Pesisir Barat ini merupakan bagian dari Kabupaten Lampung Barat.Krui punya banyak pantai yang biasa dipakai para peselancar. Beberapa pantai yang ada di Krui adalah Pantai Tanjung Setia, Pantai Mandiri, Pantai Pugung dan Way Jambu.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/PANTAI-SARI-RINGGUNG.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai sari ringgung</h3>
+                                    <p class="tm-text-highlight">Lampung</p>
+                                    <p class="tm-text-gray">Pantai Sari Ringgung adalah salah satu destinasi wisata favorit di Lampung. Pantai ini terletak di Jalan Way Ratai Km 14, Desa Sidodadi, Kecamatan Teluk Pandan, Kabupaten Pesawaran.ersedia sejumlah wahana permainan yang dapat digunakan wisatawan, seperti speed boat, kano, banana boat.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 500.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai-banua-patra.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai banua patra</h3>
+                                    <p class="tm-text-highlight">Balikpapan</p>
+                                    <p class="tm-text-gray">Pantai Banua Patra atau juga dikenal sebagai Pantai Melawai terletak di sepanjang Jalan Sudirman, Balikpapan, Kalimantan Timur.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 600.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai biduk biduk.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai biduk biduk</h3>
+                                    <p class="tm-text-highlight">Kalimantan Timur</p>
+                                    <p class="tm-text-gray">Kalimantan Timur yang memiliki ibu kota Samarinda yang memiliki banyak tempat menarik untuk dikunjungi. Kalimantan memang terkenal dengan hutan tropisnya, tetapi wisata alam yang ditawarkan tak hanya perihal hutan. Di Kaltim terdapat pantai mempesona dan masih terjaga keindahannya yang dikenal dengan Pantai Biduk Biduk di Berau</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai tanjung bajau.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai tanjung bajau</h3>
+                                    <p class="tm-text-highlight">Singkawang</p>
+                                    <p class="tm-text-gray">Tanjung bajau adalah tempat wisata yang baru saja dibuka untuk umum. Tanjung Bajau atau biasa disebut Rindu alam ini terletak di Kota Singkawang. Rindu Alam hanya berjarak 18 km dari wisata Pasir Panjang dan Palm Beach, objek wisata alam yang sudah sangat terkenal di Kalimantan Barat. Lokasinya terletak diantara Gunung Bajau, Gunung kota dan Gunung Pelapis. Rindu alam berada pada ketinggian sekitar 400m dari permukaan laut.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 700.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai batu nenek.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Batu Nenek</h3>
+                                    <p class="tm-text-highlight">Sambas</p>
+                                    <p class="tm-text-gray">Pantai Batu Nenek merupakan satu diantara gugusan pantai yang ada di sepanjang wilayah pesisir Temajuk, Paloh, Kabupaten Sambas, Kalimantan Barat.
+
+                                        Pantai Batu Nenek merupakan pantai yang tidak hanya dipenuhi hamparan pasir, namun juga dipenuhi hamparan batu karang yang tajam.
+                                        
+                                        Waktu yang tepat untuk bersantai di Pantai Batu Nenek adalah saat air laut sedang surut. Karena saat air surut pengunjung dapat berjalan kaki menuju ke lokasi Batu Nenek.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 800.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/Kelingking Beach.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Kelingking</h3>
+                                    <p class="tm-text-highlight">Bunga Mekar</p>
+                                    <p class="tm-text-gray">Pantai Kelingking merupakan pantai yang menyerupai jari kelingking. Hal ini tidak lain karena, pintu masuk yang terletak di sebuah tebing dengan bukit memanjang serta menjorok ke arah laut tampak seperti jari kelingking. Pemandangan Pantai Kelingking dari atas adalah pemandangan eksotis Tebing Paluang, atau disebut juga Karang Dewa.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 750.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai nusa dua.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai nusa dua</h3>
+                                    <p class="tm-text-highlight">bali</p>
+                                    <p class="tm-text-gray">Nusa Dua terletak di ujung bagian tenggara Pulau Bali, dan sekitar 40 km dari kota Denpasar. Di daerah elit seluas 350 hektar yang dikembangkan oleh BTDC (Bali Tourism Development Corporation) berdiri banyak hotel bintang 5 dan pusat konvensi dan tidak mengherankan, acara internasional sering diadakan di daerah ini. Nusa Dua adalah nama dari dua pulau kecil yang dipisahkan oleh pasir putih. Kawasan wisata ini diberlakukan untuk menjadi daerah pertama di Wilayah Asia-Pasifik yang mendapatkan “Green Globe”, yaitu sertifikat yang diberikan oleh Sertifikasi Green Globe untuk tempat wisata ramah lingkungan. </p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 800.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pandawa-beach-bali-1.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Pamdawa</h3>
+                                    <p class="tm-text-highlight">Kuta selatan</p>
+                                    <p class="tm-text-gray">Pantai Pandawa adalah salah satu tempat wisata di area Kuta selatan, Kabupaten Badung, Bali. Pantai ini terletak di balik perbukitan dan sering disebut sebagai Pantai Rahasia. Di sekitar pantai ini terdapat dua tebing yang sangat besar yang pada salah satu sisinya dipahat lima patung Pandawa dan Kunti.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 500.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai nyang nyang.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai nyang nyang</h3>
+                                    <p class="tm-text-highlight">Pecatu</p>
+                                    <p class="tm-text-gray">Pantai Nyang-Nyang terletak di selatan Bali, tepatnya di desa Pecatu, Sub-Kecamatan Kuta Selatan, Kabupaten Badung, dekat dengan Uluwatu. Sekitar 60 menit atau 25 km dari Bandara Internasional I Gusti Ngurah Rai. Pantai dengan pasir putih bersih dan ombak laut benar-benar sempurna untuk peselancar profesional.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 850.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai pasir timbul.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai pasir timbul</h3>
+                                    <p class="tm-text-highlight">Raja Ampat</p>
+                                    <p class="tm-text-gray">Raja Ampat selalu menampilkan pesona alamnya. Tidak hanya keindahan bawah laut saja, melainkan juga hamparan pemandangan bak lukisan.Pasir Timbul merupakan hamparan daratan yang hanya muncul ketika air laut sedang berada pada fase surut. Saat itu, di posisi agak ke tengah, akan tampak seolah muncul pulau kecil. Tentu saja, fenomena ini tampak seperti ajaib dan sangat menarik.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 850.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai Saleo.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Saleo</h3>
+                                    <p class="tm-text-highlight">Papua Barat</p>
+                                    <p class="tm-text-gray">Pantai Saleo adalah sebuah Pantai yang berada di deretan pantai sisi timur kota Waisai. Tidak seperti pantai lain di Raja Ampat yang sudah banyak dikomersialkan dan dikelola swasta, Pantai Saleo adalah pantai umum yang dikelola oleh beberapa warga lokal.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai Tanjung Kasuari.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai Tanjung Kasuari</h3>
+                                    <p class="tm-text-highlight">Sorong</p>
+                                    <p class="tm-text-gray">Pantai ini bernama Tanjung Kasuari karena lokasinya terletak di wilayah darat Sorong yang menjorok ke laut di wilayah utara pulau Papua dan menyerupai kepala burung Kasuari. Pantai ini adalah pantai yang cukup terkenal di Kota Sorong</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 800.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pantai Tanjung Batu.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Tanjung Batu</h3>
+                                    <p class="tm-text-highlight">Sorong</p>
+                                    <p class="tm-text-gray">Pantai Tanjung Batu Sorong merupakan salah satu pantai yang menjadi wisata unggulan di Pulau Papua. Pantai ini pun juga terletak di Kota Sorong, kota yang seringkali disebut sebagai salah satu kota paling maju di daerah Papua Barat meskipun hawa panas matahari yang terik dan jumlah penduduk yang sangat padat.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 950.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->   
+                    
+                    <!-- Tab 6 -->            
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai-tanjung-bira-.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Tanjung Bira</h3>
+                                    <p class="tm-text-highlight">Bonto Bahari</p>
+                                    <p class="tm-text-gray">Pantai Tanjung Bira terletak di Kecamatan Bonto Bahari, terletak 45 Km dari ibu kota Bulukumba atau sekitar 200 Km dari kota Makassar. Pantai Tanjung Bira bukan hanya terkenal di Indonesia, tetapi sudah terkenal sampai mancanegara. Hal ini terbukti dengan banyaknya wisatawan dari luar negeri. Yang paling banyak dikagumi wisatawan saat menginjakkan kaki di Tanjung Bira tidak lain karena airnya yang terlihat biru kehijauan serta atmosfir begitu menyegarkan di sekitar pantai saat cuaca sedang cerah, pantulan wama air dan birunya langit makin menambah pesona cantiknya Tanjung Bira.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 750.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pantai Appalarang.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Appalarang</h3>
+                                    <p class="tm-text-highlight">Bontobahari</p>
+                                    <p class="tm-text-gray">Pantai Apparalang terletak di Desa Ara, Kecamatan Bontobahari, sekitar 39 km jauhnya dari pusat Kabupaten Bulukumba, Sulawesi Selatan. Kamu bisa mencapainya dengan mobil, namun ada beberapa ruas jalan yang sempit, sehingga kebanyakan orang mengaksesnya dengan sepeda motor.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai Selayar.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Selayar</h3>
+                                    <p class="tm-text-highlight">Sulawesi Selatan</p>
+                                    <p class="tm-text-gray">Selayar adalah pulau yang terpisah dari daratan Sulawesi Selatan dan merupakan daerah yang berada dibawah naungan wilayah administratif Kabupaten Kepulauan Selayar, Sulawesi Selatan, Indonesia.wilayah pesisir pantai barat Pulau Selayar, memiliki pasir berwarna putih dengan air laut yang jernih </p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 650.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pantai Akkarena.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">pantai Akkarena</h3>
+                                    <p class="tm-text-highlight">Makassar</p>
+                                    <p class="tm-text-gray">Pantai Akkarena adalah pantai yang terletak di Kota Makassar, Sulawesi Selatan, Indonesia.Pantai Akkarena biasanya dijadikan pilihan sebagai tempat rekreasi bersama keluarga pada hari libur sebagai sarana bersantai, bermain, atau berolahraga.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 850.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/pantai-koka.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Koka</h3>
+                                    <p class="tm-text-highlight">Nusa Tenggara Timur</p>
+                                    <p class="tm-text-gray">Pantai Koka atau yang dijuluki dengan The Dream Beach ini terletak di Desa Wolowiro, Kecamatan Paga, Kabupaten Sikka, Kota Maumere, Propinsi Nusa Tenggara Timur. Pantai ini merupakan salah satu obyek wisata favorit di Maumere. Dari Kota Maumere jaraknya sekitar 48 km.
+                                        Pemandangan indah dengan hamparan pasir putih dan birunya laut di Pantai Koka menjadi daya tarik tersendiri. Air laut di pantai ini begitu jernih dan masih alami belum terjamah oleh tangan-tangan jahil. Terumbu karang yang menghiasi air lautnya juga turut mempercantik pemandangan Pantai Koka. Bahkan warga setempat memanfaatkan keberadaan hasil laut Pantai Koka sebagai sandaran hidupnya.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 850.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pantai Mandorak.jfif" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Mandorak</h3>
+                                    <p class="tm-text-highlight">Sumba Barat Daya</p>
+                                    <p class="tm-text-gray">Pantai Mandorak Sumba wajib jadi salah satu bucketlist-mu ketika mengunjungi Pulau Sumba. Tempat yang satu ini merupakan pantai dengan panorama yang sangat memesona dan suasana pantainya yang begitu tenang membuat siapapun bakal menikmati momen ketika berada di pantai ini.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 750.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pntai Watu Bela.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantau Watu Bela</h3>
+                                    <p class="tm-text-highlight">Sumba Barat</p>
+                                    <p class="tm-text-gray">Pantai Watu Bela terletak di Desa Tarimbang, Kecamatan Lamboya, Sumba Barat. Pantai ini terkenal dengan formasi bebatuan besar yang mengelilingi pantai, yang memberikan pemandangan yang menakjubkan.Pantai Watu Bela menawarkan keindahan alam yang masih alami, dengan pasir putih yang lembut dan air laut yang jernih. Pantai ini juga menawarkan pemandangan yang menakjubkan dari bukit karang yang mengelilingi pantai.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 850.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Pantai Marosi.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pantai Marosi</h3>
+                                    <p class="tm-text-highlight">Patiala Bawa</p>
+                                    <p class="tm-text-gray">Marosi terletak di kecamatan Lamboya, sekitar 32 km dari waikabubak. Bisa dibilang pantai ini merupakan salah satu pantai tercantik di Sumba Barat. Sebongkah atol besar membeMarosi terletak di kecamatan Lamboya, sekitar 32 km dari waikabubak. Bisa dibilang pantai ini merupakan salah satu pantai tercantik di Sumba Barat. Sebongkah atol besar membelah pantai menjadi dua bagian yang sama menawannya. Airnya sejernih kristal, dan nyaris semua orang yang pernah berkunjung ke pantai ini terkesan dengan pasirnya yang berbulir besar yang seolah hendak menelan kaki Anda saat dipijak</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp 900.000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+            
+
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                <div id="google-map"></div>
+                <form action="index.html" method="post" class="tm-contact-form">
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+            <section class="bg-light-blue pt-5 pb-5">
+                <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col-lg-3 mb-3 mb-md-0">
+                          <span class="h2 d-block">Vakansea Team </span>
+                      </div>
+                      <div class="col-lg-9">
+                          <div class="row">
+                              <div class="col-md-4 d-flex">
+                                  <div class="card mb-3">
+                                      <img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="John Doe">
+                                      <div class="card-body py-3">
+                                          <h5 class="mb-0">Johnna Doe</h5>
+                                          <span>Co-Founder, CTO</span>
+                                      </div>
+                                      <div class="card-footer pt-0 border-top-0">
+                                          <a href="#">email@email.com</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 d-flex">
+                                  <div class="card mb-3">
+                                      <img class="card-img-top" src="img/diki1.PNG" alt="Noel Flantier">
+                                      <div class="card-body py-3">
+                                          <h5 class="mb-0">Noel Flantier</h5>
+                                          <span>Co-Founder, Marketing</span>
+                                      </div>
+                                      <div class="card-footer pt-0 border-top-0">
+                                          <a href="#">email@email.com </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 d-flex">
+                                  <div class="card mb-3">
+                                      <img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="Jamie Doe">
+                                      <div class="card-body py-3">
+                                          <h5 class="mb-0">Jamie Doe</h5>
+                                          <span>Marketing</span>
+                                      </div>
+                                      <div class="card-footer pt-0 border-top-0">
+                                          <a href="#">email@email.com </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </section>
+            <section class="ftco-section">
+                <div class="container">
+                <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                
+                </div>
+                </div>
+                </div>
+                </section>
+                <footer class="footer-02">
+                <div class="container">
+                <div class="row justify-content-center">
+                <div class="col-10 col-lg-6">
+                <div class="subscribe mb-5">
+                <form action="#" class="subscribe-form">
+                <div class="form-group d-flex">
+                <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-4 col-lg-5">
+                <div class="row">
+                <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
+                <h2 class="footer-heading"><a href="#" class="logo">Vakansea</a></h2>
+                <p>WUJUDKAN PERJALANANMU DENGAN CARAMU</p>
+                
+                </div>
+                </div>
+                </div>
+                <div class="col-md-8 col-lg-7">
+                <div class="row">
+                <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Discover</h2>
+                <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                <li><a href="#" class="py-1 d-block">Merchant</a></li>
+                <li><a href="#" class="py-1 d-block">Giving back</a></li>
+                <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">About</h2>
+                <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Staff</a></li>
+                <li><a href="#" class="py-1 d-block">Team</a></li>
+                <li><a href="#" class="py-1 d-block">Careers</a></li>
+                <li><a href="#" class="py-1 d-block">Blog</a></li>
+                </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Resources</h2>
+                <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Security</a></li>
+                <li><a href="#" class="py-1 d-block">Global</a></li>
+                <li><a href="#" class="py-1 d-block">Charts</a></li>
+                <li><a href="#" class="py-1 d-block">Privacy</a></li>
+                </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Social</h2>
+                <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block">Facebook</a></li>
+                <li><a href="#" class="py-1 d-block">Twitter</a></li>
+                <li><a href="#" class="py-1 d-block">Instagram</a></li>
+                <li><a href="#" class="py-1 d-block">Googleplus</a></li>
+                </ul>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="row partner-wrap mt-5">
+                <div class="col-md-12">
+                <div class="row align-items-center">
+                    
+                
+                </div>
+                </div>
+                </div>
+                <div class="row mt-5">
+                <div class="col-md-6 col-lg-8">
+                <p class="copyright">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vakansea
+                </p>
+                </div>
+                
+                </div>
+                </div>
+                </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+        /* Google Maps
+        ------------------------------------------------*/
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(37.769725, -122.462154),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+              calculateCenter();
+          });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(center);
+          });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap(){
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        } 
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
